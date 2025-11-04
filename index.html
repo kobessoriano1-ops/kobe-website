@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>piece of life </title>
+<style>
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: #fafafa;
+    color: #222;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    transition: background 0.4s, color 0.4s;
+  }
+
+  header {
+    background: #4b2e05;
+    color: white;
+    padding: 30px 10px;
+    position: relative;
+  }
+
+  h1 {
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  button {
+    background: none;
+    border: 2px solid #4b2e05;
+    padding: 10px 20px;
+    margin: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 8px;
+    transition: 0.3s;
+  }
+
+  button:hover {
+    background: #4b2e05;
+    color: white;
+  }
+
+  #darkModeBtn {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    color: white;
+    border: 2px solid white;
+  }
+
+  #darkModeBtn:hover {
+    background: white;
+    color: #4b2e05;
+  }
+
+  .section {
+    display: none;
+    margin: 30px auto;
+    width: 85%;
+    max-width: 700px;
+    background: white;
+    border-radius: 15px;
+    padding: 25px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    animation: fadeIn 0.6s ease;
+  }
+
+  @keyframes fadeIn {
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .gallery img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 15px;
+    box-shadow: 0 3px 8px rgba(0,0,0,0.2);
+  }
+
+  .icon {
+    width: 24px;
+    vertical-align: middle;
+    margin-right: 6px;
+  }
+
+  footer {
+    margin-top: 40px;
+    padding: 20px;
+    background: #4b2e05;
+    color: white;
+    font-style: italic;
+  }
+
+  /* 🌙 Dark Mode Styles */
+  .dark-mode {
+    background-color: #1a1a1a;
+    color: #f0f0f0;
+  }
+
+  .dark-mode header {
+    background: #2b1e10;
+  }
+
+  .dark-mode button {
+    border-color: #f0f0f0;
+    color: #f0f0f0;
+  }
+
+  .dark-mode button:hover {
+    background: #f0f0f0;
+    color: #2b1e10;
+  }
+
+  .dark-mode .section {
+    background: #2a2a2a;
+    box-shadow: 0 4px 10px rgba(255,255,255,0.1);
+  }
+</style>
+</head>
+<body>
+
+<header>
+    
+  <h1>Welcome to Kobe S. Secquel’s life🐼</h1>
+  <p>🐼 Powered by kobe — Explore my life, my passions, and creativity.</p>
+  <button id="darkModeBtn" onclick="toggleDarkMode()">☾</button>
+</header>
+
+
+<div>
+  <button onclick="showSection('dictionary')">📖 Kobe’s Dictionary</button>
+  <button onclick="showSection('about')">👤 Get to Know Me</button>
+  <button onclick="showSection('life')">📸 Personal Life</button>
+  <button onclick="showSection('crush')">💘 Kobe’s Crush</button>
+</div>
+
+<!-- 📖 Dictionary Section -->
+<div id="dictionary" class="section">
+  <h2>📖 Kobe’s Dictionary</h2>
+  <p><strong>Hobbies:</strong> I love going to cafés, hanging out with my friends and family, and exploring the world through my computer — coding, programming, and web development bring me joy and inspiration.</p>
+  <p>
+    <em>Personal Essay:</em><br>
+    For me, hobbies aren’t just activities — they’re expressions of who I am.  
+    Going to cafés gives me peace and creativity. Time with friends and family reminds me of my purpose,  
+    while coding and web developing connect me to endless possibilities.  
+    Every line of code I write feels like painting my imagination into reality.
+  </p>
+</div>
+
+<!-- 👤 About Section -->
+<div id="about" class="section">
+  <h2>👤 Get to Know Me</h2>
+  <p><strong>Age:</strong> 17 years old</p>
+  <p><strong>Birthday:</strong> October 8, 2008</p>
+  <p><strong>Zodiac Sign:</strong> Libra ♎</p>
+  <h3>🌐 Socials</h3>
+  <p>
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/733/733547.png"> 
+    <a href="https://facebook.com/Kobesecquel" target="_blank">Facebook: Kobe Secquel</a><br>
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/2111/2111463.png">
+    <a href="https://instagram.com/Kobe_seqelix" target="_blank">Instagram: @Kobe_seqelix</a><br>
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/3046/3046125.png">
+    <a href="https://tiktok.com/@tjayy" target="_blank">TikTok: @tjaydabee</a><br>
+    <img class="icon" src="https://cdn-icons-png.flaticon.com/512/281/281769.png">
+    <a href="mailto:kobessoriano1@gmail.com">Gmail: kobessoriano1@gmail.com</a>
+  </p>
+  <p>
+    <em>About Me Essay:</em><br>
+    Hi! I’m Kobe S. Secquel — a 17-year-old Libra who believes in balance, creativity, and connection.  
+    I find meaning in little things: the smell of coffee, the sound of laughter, and the satisfaction of solving a coding problem.  
+    Whether it’s through designing websites or building ideas, I love bringing imagination to life.  
+    My journey is still unfolding, but one thing’s certain — I’m chasing growth, purpose, and a life filled with creativity.
+  </p>
+</div>
+
+<!-- 📸 Personal Life Section -->
+<div id="life" class="section">
+  <h2>📸 Kobe’s Personal Life</h2>
+  <p>Here’s a glimpse of moments that make my world brighter.</p>
+  <div class="gallery">
+    <div>
+      <img src="images/kobe1.jpg" alt="Kobe at a café">
+      <p>☕ Enjoying a quiet café afternoon</p>
+    </div>
+    <div>
+      <img src="images/kobe2.jpeg" alt="Kobe with friends">
+      <p>💫 Hanging out with friends</p>
+    </div>
+    <div>
+      <img src="images/kobe3.jpg" alt="Kobe n yuuki">
+      <p>hangout w my baby yuuki</p>
+    </div>
+  </div>
+</div>
+
+<!-- 💘 Crush Section -->
+<div id="crush" class="section">
+  <h2>💘 Kobe’s Crush</h2>
+  <img src="images/sean.jpeg" alt="Sean’s Photo" style="width:200px; height:200px; border-radius:50%; object-fit:cover; box-shadow:0 3px 10px rgba(0,0,0,0.3);">
+  <p><strong>Sean ❤️</strong></p>
+  <p>
+    Sean isn’t just someone I admire — he’s my inspiration.  
+    His energy makes ordinary days feel special, and his presence reminds me to stay confident and kind.  
+    Every little thing about him, from his smile to his vibe, pushes me to be the best version of myself.  
+    Crush or not, he’s a part of the reason I smile a little more every day.
+  </p>
+</div>
+
+<footer>
+  © 2025 Kobe S. Secquel | Crafted and bored
+</footer>
+
+<script>
+  function showSection(id) {
+    document.querySelectorAll('.section').forEach(s => s.style.display = 'none');
+    const section = document.getElementById(id);
+    section.style.display = 'block';
+    section.style.animation = 'fadeIn 0.6s ease';
+  }
+
+  function toggleDarkMode() {
+    document.body.classList.toggle('dark-mode');
+  }
+</script>
+
+</body>
+</html>
+
